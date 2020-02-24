@@ -1,6 +1,0 @@
-x <- 1:7
-y <- 1:10
-max.len<-max(length(x),length(y))
-x = c(x, rep(NA, max.len - length(x)))
-y = c(y, rep(NA, max.len - length(y))) 
-cbind(x,y)
