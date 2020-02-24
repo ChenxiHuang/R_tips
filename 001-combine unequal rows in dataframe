@@ -1,0 +1,12 @@
+# use cbind() 
+# i.e. column-wise bind in R. 
+# All the left values must be filled with NA before binding them; NA signifies NULL or empty  
+
+#e.g. :
+
+x <- 1:7
+y <- 1:10
+max.len<-max(length(x),length(y))
+x = c(x, rep(NA, max.len - length(x)))
+y = c(y, rep(NA, max.len - length(y))) 
+cbind(x,y)
